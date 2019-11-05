@@ -3,7 +3,7 @@ position: fixed;
 height: 120px;
 width: 100%; 
 z-index: 1030;
-background-color:darkcyan;
+background-color: darkCyan;
 color: #FFFF;
 padding: 1.5em;
 top: 0;
