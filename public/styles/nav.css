@@ -3,7 +3,7 @@ position: fixed;
 height: 120px;
 width: 100%; 
 z-index: 1030;
-background-color: #4056A1;
+background-color:darkcyan;
 color: #FFFF;
 padding: 1.5em;
 top: 0;
@@ -13,3 +13,7 @@ top: 0;
   font-family: 'Bungee', cursive;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
