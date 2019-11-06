@@ -1,11 +1,11 @@
 #tweet-container {
   margin: auto;
   margin-top: 50px;
-  padding-bottom: 50px;
 }
 
 .tweet {
   border: solid;
+  margin-bottom: 50px;
 }
 
 .tweet:hover {
