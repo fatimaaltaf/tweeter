@@ -8,10 +8,18 @@
   border: solid;
 }
 
+.tweet:hover {
+  /* filter: blur(1px); */
+  box-shadow: 8px 5px 5px darkcyan;
+ } 
+
+ .tweet:hover .twitter-handle {
+  opacity: 1;
+ }
+
 .avatarName {
   display: flex;
   flex-direction: row;
-  /* justify-content: ; */
   align-items: center;
   width: 100%
 }
@@ -41,6 +49,8 @@
 
 .twitter-handle { 
   padding-right: 20px;
+  opacity: 0.5;
+  color: darkcyan;
 }
 
 .tweet-text {
@@ -57,14 +67,29 @@
   margin-right: 10px;
 }
 
-.dateIcons {
+.tweet footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 60%;
-  font-weight: bold;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-top: 5px;
- }
+  border-top: 3px solid black;
+  margin: 0 5px;
+}
 
+/* .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+ } */
+ 
+ .date {
+  font-size: 16px;
+}
+
+.dateIcons{
+  color:darkcyan;
+  font-size: 13px
+}
+ 
