@@ -30,6 +30,11 @@
 
     <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
 
+    <!-- hover animation CSS -->
+
+    <link rel="stylesheet" href="/styles/animista.css" type="text/css" />
+
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
@@ -40,9 +45,10 @@
 
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
-        <!-- Font awesome -->
+    <!-- Font awesome -->
 
     <link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?ver=5.8.2"> 
+
 
   </head>
 
@@ -50,8 +56,12 @@
     <!-- Top nav bar (fixed) -->
     <nav class="flex-container">
       <span id="title">tweeter</span>
+    <div class="write-tweet">
       <span><b>Write</b> a tweet</span>
+      <i class="arrow fas fa-angle-double-down fa-bounce"></i>
+    </div>
     </nav>
+
 
     <header id="header">
         <div>

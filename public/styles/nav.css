@@ -3,7 +3,7 @@ position: fixed;
 height: 120px;
 width: 100%; 
 z-index: 1030;
-background-color: darkCyan;
+background-color: #ECBE7A;
 color: #FFFF;
 padding: 1.5em;
 top: 0;
@@ -16,4 +16,58 @@ top: 0;
 .flex-container {
   display: flex;
   justify-content: space-between;
+}
+
+.write-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.arrow {
+  padding-top: 5%;
+  color: #70AE98;
+  cursor: pointer;
+}
+
+
+.fa-bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 1s infinite linear;
+  -o-animation: bounce 1s infinite linear;
+  -webkit-animation: bounce 1s infinite linear;
+  animation: bounce 1s infinite linear;
+}
+
+@-webkit-keyframes bounce {
+  0% { top: 0; }
+  50% { top: -0.2em; }
+  70% { top: -0.3em; }
+  100% { top: 0; }
+}
+@-moz-keyframes bounce {
+  0% { top: 0; }
+  50% { top: -0.2em; }
+  70% { top: -0.3em; }
+  100% { top: 0; }
+}
+@-o-keyframes bounce {
+  0% { top: 0; }
+  50% { top: -0.2em; }
+  70% { top: -0.3em; }
+  100% { top: 0; }
+}
+@-ms-keyframes bounce {
+  0% { top: 0; }
+  50% { top: -0.2em; }
+  70% { top: -0.3em; }
+  100% { top: 0; }
+}
+@keyframes bounce {
+  0% { top: 0; }
+  50% { top: -0.2em; }
+  70% { top: -0.3em; }
+  100% { top: 0; }
 }

@@ -2,9 +2,8 @@
   height: 400px;
   width: 100%;
   position: absolute;
-  background-color: #9ba8ae;
-  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
-  color: #ffff;
+  background-color: #70AE98;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");  
   text-align: center;
   top: 120px;
   padding: 1em;
@@ -13,3 +12,4 @@
 .name {
   margin-top: 0px;
 }
+

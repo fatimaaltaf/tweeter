@@ -6,20 +6,28 @@
 
 // Generate DOM structure for tweet
 
+// Escape function to prevent XXS
+const escape = function(str) {
+  const div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
+
 const createTweetElement = function(tweet) {
 let $tweet = $(`<article class="tweet">
 <header>
   <div class="avatarName">
     <img class="avatar" src=${tweet.user.avatars} alt="Avatar">
-    <span class="name">${tweet.user.name}</span>
+    <span class="name">${escape(tweet.user.name)}</span>
   </div>
   <div>
-      <span class="twitter-handle">${tweet.user.handle}</span>
+      <span class="twitter-handle">${escape(tweet.user.handle)}</span>
   </div>
 </header>
 
 
-  <p  class="tweet-text">${tweet.content.text}</p>
+  <p  class="tweet-text">${escape(tweet.content.text)}</p>
 
   
 <footer>
@@ -92,6 +100,13 @@ $( document ).ready(function() {
         })
       }
 
+  });
+
+  // Toggle New Tweet Box
+  // $('.new-tweet').hide();
+
+  $('.arrow').click(function () {
+    $('.new-tweet').slideToggle('slow')
   });
 
   // Load tweets
