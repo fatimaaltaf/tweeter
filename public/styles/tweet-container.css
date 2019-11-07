@@ -10,7 +10,7 @@
 
 .tweet:hover {
   /* filter: blur(1px); */
-  box-shadow: 8px 5px 5px darkcyan;
+  box-shadow: 8px 5px 5px #70AE98;
  } 
 
  .tweet:hover .twitter-handle {
@@ -86,10 +86,15 @@
  
  .date {
   font-size: 16px;
+  padding-left: 5px;
 }
 
 .dateIcons{
-  color:darkcyan;
+  color: #70AE98;
   font-size: 13px
+}
+
+#footer {
+  margin-bottom: 1%;
 }
  

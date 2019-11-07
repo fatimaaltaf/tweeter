@@ -62,7 +62,6 @@
     </div>
     </nav>
 
-
     <header id="header">
         <div>
             <img src="/images/profile-hex.png"> 
@@ -75,6 +74,14 @@
     <!-- Page-specific (main) content here -->
     <main class="container"> 
         <section class="new-tweet">
+          <div class="error-container-1">
+            <i class="triangle1 fas fa-exclamation-triangle"></i>
+            <span class="error-message1">Your tweet is over 140 characters. Please try again.</span>
+          </div>
+          <div class="error-container-2">
+            <i class="triangle2 fas fa-exclamation-triangle"></i>
+            <span class="error-message2">No characters found. Please try again.</span>
+          </div>
             <h2 class="tweetHeader">Compose Tweet</h2>
             <form id="tweet-submission" method="POST" action="/tweets/">
               <textarea class="tweetInput" name="text" placeholder="What are you humming about?"></textarea>

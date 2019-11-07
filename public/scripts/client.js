@@ -30,7 +30,7 @@ let $tweet = $(`<article class="tweet">
   <p  class="tweet-text">${escape(tweet.content.text)}</p>
 
   
-<footer>
+<footer id="footer">
   <div>
   <span class="date">${getTime(tweet.created_at)} days ago</span>
   </div>
@@ -59,10 +59,10 @@ const getTime = function(created_at) {
 // Helper function that checks if tweet text input matches the invalid cases
 const checkIfTweetIsInvalid = function(tweet) {
   if (tweet === '') {
-    alert('Empty tweet. Please add text.');
+    $(".error-container-2").show();
     return true;
   } else if ( tweet.length > 140) {
-    alert('You have more than 140 characters.')
+    $(".error-container-1").show();
     return true;
   }
   return false;
@@ -96,14 +96,16 @@ $( document ).ready(function() {
           type: 'POST',
           data: $(this).serialize()
         }).then(() => {
+          emptyTweetBox();
           loadTweets();
+          $(".error-container-1").hide();
+          $(".error-container-2").hide();
         })
       }
 
   });
 
   // Toggle New Tweet Box
-  // $('.new-tweet').hide();
 
   $('.arrow').click(function () {
     $('.new-tweet').slideToggle('slow')
@@ -113,11 +115,17 @@ $( document ).ready(function() {
   const loadTweets = function () {
     $.ajax('/tweets', { method: 'GET' })
     .then(function (tweet) {
-      console.log('Success: ', tweet);
         renderTweets(tweet);
     })
   };
   loadTweets();
+
+  // Emptying tweet box
+  const emptyTweetBox = function () {
+  const tweet = $('.tweetInput').val();
+  $('.tweetInput').val("");
+  };
+
 });
 
 

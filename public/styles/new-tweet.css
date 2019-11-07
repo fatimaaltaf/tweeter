@@ -9,6 +9,7 @@
 
 .new-tweet {
   margin: auto;
+  display: none;
 }
 
 .buttonCharacter {
@@ -42,4 +43,21 @@
 
 .overChar {
   color: red;
+}
+
+
+.error-container-1 {
+  border: 2px solid;
+  color: red;
+  width: 30%;
+  margin: 1% auto;
+  display: none;
+}
+
+.error-container-2 {
+  border: 2px solid;
+  color: red;
+  width: 30%;
+  margin: 1% auto;
+  display: none;
 }
