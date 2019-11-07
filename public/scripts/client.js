@@ -60,9 +60,11 @@ const checkIfTweetIsInvalid = function(tweet) {
   return false;
 }
 
+
 // Render tweets 
 
 const renderTweets = function(tweets) {
+  $('#tweet-container').empty()
   for (let tweet of tweets) {
   $('#tweet-container').append(createTweetElement(tweet));
   }
@@ -85,8 +87,11 @@ $( document ).ready(function() {
           url: '/tweets',
           type: 'POST',
           data: $(this).serialize()
-        });
+        }).then(() => {
+          loadTweets();
+        })
       }
+
   });
 
   // Load tweets
