@@ -9,7 +9,10 @@
 
     <!-- Layout CSS -->
 
-    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -34,6 +37,9 @@
 
     <link rel="stylesheet" href="/styles/animista.css" type="text/css" />
 
+    <!-- Responsive css  -->
+
+    <link rel="stylesheet" href="/styles/responsive.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -43,60 +49,82 @@
 
     <!-- Compose Char Counter JSS -->
 
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
 
     <!-- Font awesome -->
 
-    <link type="text/css" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?ver=5.8.2"> 
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?ver=5.8.2"
+    />
 
+    <!-- Disable Viewport Zoom -->
 
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
+    <!-- Nav Bar (fixed) -->
     <nav class="flex-container">
       <span id="title">tweeter</span>
-    <div class="write-tweet">
-      <span><b>Write</b> a tweet</span>
-      <i class="arrow fas fa-angle-double-down fa-bounce"></i>
-    </div>
+      <div class="write-tweet">
+        <span><b>Write</b> a tweet</span>
+        <i class="arrow fas fa-angle-double-down fa-bounce"></i>
+      </div>
     </nav>
-
-    <header id="header">
+    <!-- Profile picture and name -->
+    <div class="desktop-container">
+      <header id="header">
         <div>
-            <img src="/images/profile-hex.png"> 
+          <img src="/images/profile-hex.png" />
         </div>
-        <br>
+        <br />
         <div>
-            <h2 class="name">Your Name</h2>
+          <h2 class="name">Your Name</h2>
         </div>
-    </header>
-    <!-- Page-specific (main) content here -->
-    <main class="container"> 
+      </header>
+      <!-- New tweet box -->
+      <main class="container">
         <section class="new-tweet">
           <div class="error-container-1">
             <i class="triangle1 fas fa-exclamation-triangle"></i>
-            <span class="error-message1">Your tweet is over 140 characters. Please try again.</span>
+            <span class="error-message1"
+              >Your tweet is over 140 characters. Please try again.</span
+            >
+            <i class="triangle1 fas fa-exclamation-triangle"></i>
           </div>
           <div class="error-container-2">
             <i class="triangle2 fas fa-exclamation-triangle"></i>
-            <span class="error-message2">No characters found. Please try again.</span>
+            <span class="error-message2"
+              >No characters found. Please try again.</span
+            >
+            <i class="triangle1 fas fa-exclamation-triangle"></i>
           </div>
-            <h2 class="tweetHeader">Compose Tweet</h2>
-            <form id="tweet-submission" method="POST" action="/tweets/">
-              <textarea class="tweetInput" name="text" placeholder="What are you humming about?"></textarea>
-                <div class="buttonCharacter">
-                  <input type="submit" value="Tweet" class="tweetButton">
-                  <span class="counter">140</span>
-                </div>   
-            </form>
-         </section>
-
+          <h2 class="tweetHeader">Compose Tweet</h2>
+          <form id="tweet-submission" method="POST" action="/tweets/">
+            <textarea
+              class="tweetInput"
+              name="text"
+              placeholder="What are you humming about?"
+            ></textarea>
+            <div class="buttonCharacter">
+              <input type="submit" value="Tweet" class="tweetButton" />
+              <span class="counter">140</span>
+            </div>
+          </form>
+        </section>
+        <!-- Loaded Tweets -->
         <section id="tweet-container">
           <!-- Dynamic tweets section -->
         </section>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
-
-

@@ -74,15 +74,6 @@
   border-top: 3px solid black;
   margin: 0 5px;
 }
-
-/* .icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 15px;
-  font-weight: bold;
-  color: red;
- } */
  
  .date {
   font-size: 16px;
@@ -91,10 +82,11 @@
 
 .dateIcons{
   color: #70AE98;
-  font-size: 13px
+  font-size: 15px;
+  padding-top: 5px;
+  padding-right: 10px;
 }
 
 #footer {
   margin-bottom: 1%;
 }
- 

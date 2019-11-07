@@ -1,0 +1,29 @@
+@media only screen and (min-width: 800px) {
+  #header {
+    max-width: 40%;
+    /* margin-top: 40px; */
+  }
+
+  .container {
+    /* position: static;
+    margin-top: 90px; */
+    position: unset;
+    /* margin: initial; */
+    max-width: 60%;
+    /* display: flex; */
+    margin-right: 10px;
+    margin-top: 120px;
+  }
+
+  /* .container .new-tweet {
+    position: static;
+  } */
+  .desktop-container {
+    flex-direction: column;
+  }
+}
+.desktop-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
