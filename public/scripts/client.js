@@ -59,10 +59,12 @@ const getTime = function(created_at) {
 // Helper function that checks if tweet text input matches the invalid cases
 const checkIfTweetIsInvalid = function(tweet) {
   if (tweet === '') {
-    $(".error-container-2").show();
+    setTimeout(() => $(".error-container-2").slideDown("slow"));
+    setTimeout(() => $(".error-container-2").slideUp("slow"), 5000);
     return true;
   } else if ( tweet.length > 140) {
-    $(".error-container-1").show();
+    setTimeout(() => $(".error-container-1").slideDown());
+    setTimeout(() => $(".error-container-1").slideUp(), 5000);
     return true;
   }
   return false;
@@ -111,7 +113,6 @@ $( document ).ready(function() {
   });
 
   // Toggle New Tweet Box
-
   $('.arrow').click(function () {
     $('.new-tweet').slideToggle('slow')
   });
