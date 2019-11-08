@@ -87,6 +87,8 @@ $( document ).ready(function() {
 
     $form.on('submit', function ( event ) {
       console.log('Button clicked, performing ajax call...');
+      $(".error-container-1").hide();
+      $(".error-container-2").hide();
       event.preventDefault();
       const tweet = $('.tweetInput').val();
       let result = checkIfTweetIsInvalid(tweet);
@@ -97,9 +99,7 @@ $( document ).ready(function() {
           data: $(this).serialize()
         }).then(() => {
           emptyTweetBox();
-          loadTweets();
-          $(".error-container-1").hide();
-          $(".error-container-2").hide();
+          loadTweets();   
         })
       }
 

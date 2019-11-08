@@ -1,6 +1,8 @@
 #tweet-container {
   margin: auto;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .tweet {
@@ -85,6 +87,11 @@
   font-size: 15px;
   padding-top: 5px;
   padding-right: 10px;
+  display: none;
+}
+
+.tweet:hover .dateIcons{
+  display: block;
 }
 
 #footer {
