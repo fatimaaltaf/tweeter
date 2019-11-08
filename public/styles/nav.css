@@ -3,8 +3,8 @@ position: fixed;
 height: 120px;
 width: 100%; 
 z-index: 1030;
-background-color: #ECBE7A;
-color: #FFFF;
+background-color: #70AE98;
+background-image: url("https://www.transparenttextures.com/patterns/food.png");  color: #FFFF;
 padding: 1.5em;
 top: 0;
 }
@@ -27,7 +27,7 @@ top: 0;
 
 .arrow {
   padding-top: 5%;
-  color: #70AE98;
+  color: red;
   cursor: pointer;
 }
 

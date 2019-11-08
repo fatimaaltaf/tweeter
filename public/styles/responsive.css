@@ -1,6 +1,8 @@
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 940px) {
   #header {
-    max-width: 40%;
+    max-width: 30%;
+    margin-left: 30px;
+    margin-top: 100px;
     /* margin-top: 40px; */
   }
 
@@ -11,8 +13,13 @@
     /* margin: initial; */
     max-width: 60%;
     /* display: flex; */
-    margin-right: 10px;
+    margin-right: 50px;
     margin-top: 120px;
+  }
+
+  .flex-container {
+    background-color: #ECBE7A;
+    background-image: none;
   }
 
   /* .container .new-tweet {
