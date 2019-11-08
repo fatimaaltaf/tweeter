@@ -2,7 +2,7 @@
 
 Summing up your experiences in 140 characters is a skill. Tweeter is a simple, single-page Twitter clone that allows you to do just that .
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+I built this app using HTML, CSS, JS, jQuery and utilizing AJAX front-end skills. I also used Node, Express and MongoDB to practice my back-end skills.
 
 ## 🐣*Chirp Chirp*🐣
 
