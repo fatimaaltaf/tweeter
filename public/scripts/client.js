@@ -60,11 +60,11 @@ const getTime = function(created_at) {
 const checkIfTweetIsInvalid = function(tweet) {
   if (tweet === '') {
     setTimeout(() => $(".error-container-2").slideDown("slow"));
-    setTimeout(() => $(".error-container-2").slideUp("slow"), 5000);
+    setTimeout(() => $(".error-container-2").slideUp("slow"), 3000);
     return true;
   } else if ( tweet.length > 140) {
     setTimeout(() => $(".error-container-1").slideDown());
-    setTimeout(() => $(".error-container-1").slideUp(), 5000);
+    setTimeout(() => $(".error-container-1").slideUp(), 3000);
     return true;
   }
   return false;
