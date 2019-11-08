@@ -100,6 +100,11 @@ $( document ).ready(function() {
         }).then(() => {
           emptyTweetBox();
           loadTweets();   
+            // Reset counter
+          let $charInTweet = $(this).val().length;
+          let $charLeft = 140 - $charInTweet
+          let $counter = $(this).closest("form").find(".counter");
+            $counter.text($charLeft);
         })
       }
 
