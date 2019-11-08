@@ -9,6 +9,9 @@ I built this app using HTML, CSS, JS, jQuery and utilizing AJAX front-end skills
 Here's a sneak-peek of what Tweeter looks like: 
 
 !["Login Page in desktop view"](https://github.com/fatimaaltaf/tweeter/blob/master/Docs/Tweeter-homepage.png)
+
+Mobile view
+
 !["Mobile view](https://github.com/fatimaaltaf/tweeter/blob/master/Docs/tweeter-mobile-responsive.png)
 
 ## 💻How to use 💻
