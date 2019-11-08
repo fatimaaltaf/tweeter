@@ -33,6 +33,8 @@ Here's a sneak-peek of what Tweeter looks like:
 1. Allows users to send and view tweets.
 2. New tweets section can be toggled to open and close for a cleaner interface.
 3. Tweeter is responsive to mobile and desktop. 
+4. Returns errors if tweet is over 140 characters or if tweet is empty. 
+5. Cool animated icons which spruce up the app 🎄.
 
 
 
